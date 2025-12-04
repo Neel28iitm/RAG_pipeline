@@ -1,0 +1,10 @@
+langchain
+langchain-community
+langchain-chroma
+langchain-google-genai
+pypdf
+chromadb
+python-dotenv
+streamlit
+sentence-transformers
+google-generativeai>=0.8.3
