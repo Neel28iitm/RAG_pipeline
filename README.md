@@ -27,7 +27,7 @@ To overcome the limitations of vague user queries, this pipeline employs a two-s
 
 ## ⚡ Technical Features
 
-* **Context-Aware Retrieval:** Implemented using **FAISS** for efficient similarity search over high-dimensional vector embeddings.
+* **Context-Aware Retrieval:** Implemented using **Chroma** for efficient similarity search over high-dimensional vector embeddings.
 * **Hallucination Guardrails:** Strict prompt engineering ensures the model answers "I don't know" rather than fabricating facts when context is missing.
 * **Document Ingestion Engine:** Robust parsing of PDF documents using `pypdf`, capable of handling multi-page technical reports.
 * **Latency Optimization:** Caching mechanisms for frequent queries to reduce API costs and response time.
@@ -39,9 +39,9 @@ To overcome the limitations of vague user queries, this pipeline employs a two-s
 | Component | Technology Used |
 | :--- | :--- |
 | **Orchestration** | LangChain |
-| **Language Models** | OpenAI GPT-4 / Llama 3 (Configurable) |
-| **Vector Database** | FAISS (Facebook AI Similarity Search) |
-| **Embeddings** | OpenAI Embeddings (`text-embedding-3-small`) |
+| **Language Models** | Gemini 2.5 flash |
+| **Vector Database** | ChromaDB |
+| **Embeddings** | GoogleGenerativeAIEmbeddings (`models/text-embedding-004`) |
 | **Language** | Python 3.10+ |
 
 ---
